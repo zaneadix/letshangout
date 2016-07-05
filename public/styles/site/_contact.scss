@@ -1,0 +1,85 @@
+
+@import "variables";
+
+#contact {
+
+    h4 {
+
+        color: $black;
+        text-transform: none;
+        text-align: left;
+    }
+
+    .services, .information {
+
+        padding: 30px 40px;
+    }
+
+    .services {
+
+        background-color: $friend-blue;
+       
+        h4 { margin-bottom: 40px; }
+    }
+
+    .information {
+
+        h4 { margin-bottom: 26px; }
+
+        form {
+
+            margin: 0 10%;
+            width: 80%;
+
+            .btn {
+
+                width: 100%;
+            }
+
+            .fields {
+
+                margin-bottom: 3em;
+
+                .slide-input {
+
+                    position: relative;
+                    margin-bottom: 1.3em;
+
+                    label {
+
+                        position: absolute;
+                        font-weight: 500;
+                        font-size: 1.5em;
+                        top: 1.1em;
+                        color: $text-blue;
+                        pointer-events: none;
+                        -webkit-transition: top 0.2s, color 0.3s, font-weight -0.3s;
+                        transition: top 0.2s color 0.3s, font-weight 0.3s;
+                    }
+
+                    input {
+
+                        border: 0px solid $tapfer;
+                        border-width: 0 0 .1em;
+                        margin-top: 1.6em;
+                        width: 100%;
+                        background: transparent;
+
+                        &:focus {
+
+                            outline: none;
+                        }
+
+                        &:focus + label, &.filled + label {
+
+                            top: 0.1em;
+                            font-size: 1em;
+                            color: $black;
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

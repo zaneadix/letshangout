@@ -1,0 +1,50 @@
+
+@import "variables";
+
+#hangouts {
+
+    .callouts {
+
+        margin: 0 auto;
+        width: 90%;
+
+        
+        .card {
+
+            padding: 0;
+            text-align: center;
+
+            .illustration {
+            
+                background-color: $rose;
+                height: 16em;
+
+                h3 {
+                    
+                    padding-top: 2.2em;
+                    margin: 0;
+                    color: $dark-rose;
+                }
+            }
+
+            .information {
+                
+                .description {
+
+                    padding: 1.8em 1.8em;
+                    font-size: .9em;
+                    line-height: 1.7em;
+                    margin-bottom: 0;
+                }
+                
+                .times {
+                    
+                    font-size: .9em;
+                    color: $money;
+                    font-weight: 400;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}

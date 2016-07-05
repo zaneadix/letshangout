@@ -1,0 +1,281 @@
+extends ../layouts/default
+
+block splash
+
+	p.tagline Dog walking & pet sitting
+
+	//- .sprite.lg.venusaur
+	//- .sprite.lg.venusaur
+	//- .sprite.sm.venusaur
+	//- .sprite.lg.venusaur
+	//- .sprite.sm.venusaur
+
+	//- .sprite.md.charizard
+	//- .sprite.md.charizard
+	//- .sprite.md.charizard
+	//- .sprite.md.charizard
+
+
+block content
+
+	section.container#welcome
+		.row
+			p Welcome to Let's Hangout! <br/>
+				|Your Richmond dog walking and pet sitting service. At Let's Hangout! our<br />
+				|aim is to make sure that your best friend is our best friend
+
+
+	section.container#about
+
+		.row
+			.col-md-11.col-lg-11.no-float
+
+				.row
+					h1 About
+					p.sub Get to know Sham and the origins of Let's Hangout!
+
+				.row
+					.row-height
+						.card
+							.col-md-6.col-height.introduction
+								p <span class="tell-em"> My Name is Shamoniki Ellison </span> <br/>
+									|and I started Let's Hangout! because I love animals
+									|of all shapes and species. I have volunteered with the 
+									|SPCA and have been an on call pet sitter for many 
+									|friends for years. I saw an opportunity to help others
+									|while having the chance to get outdoors and hangout.
+									|My goal is to start a caring network of clients who 
+									|trust to call Let's Hangout! whenever their pet needs
+									|a temporary substitute for the real thing.
+
+							.col-md-6.col-height.photo
+								.overlay
+
+
+	section.container#hangouts
+
+		.row
+			.col-md-11.col-lg-11.no-float
+
+				.row
+					h1 Hangouts
+					p.sub Free with all service is in house crate and litterbox cleanup, 
+						|bringing in packages and plants watered by request.
+
+				.callouts
+					.row
+						.col-md-5.card
+							.illustration
+								h3 Hangouts
+
+							.information
+								p.description If you have a pet at home that needs midday attention
+									|such as a walk, feeding or bathroom break we offer 
+									|a range of time options from a 15 minute walk for
+									|just a break suitable for puppies and older dogs, 30
+									|minute walks and if your best friend is full of energy
+									|then a 1 hour walk/hangout is highly recommended.
+
+								p.times 10AM-5PM (MTWF) | 10AM-2PM (Th)
+
+
+						.col-md-6.col-lg-5.col-lg-offset-2.card
+							.illustration
+								h3 Sleepovers
+
+							.information
+								p.description If you have a pet at home that needs midday attention
+									|such as a walk, feeding or bathroom break we offer 
+									|a range of time options from a 15 minute walk for
+									|just a break suitable for puppies and older dogs, 30
+									|minute walks and if your best friend is full of energy
+									|then a 1 hour walk/hangout is highly recommended.
+
+								p.times 4PM to 11AM the next day
+
+
+	
+	section.container#pricing
+
+		.row
+			.col-md-11.col-lg-11.no-float
+
+				.row
+					h1 Prices
+					p.sub Adjust the calculator to get an estimate of our services
+
+				.card
+					.row.calculator
+
+						.col-md-7
+							h3 Type of Hangout
+
+							.row.services(group-name="pricing")
+								.service(name="hangout")
+									.selection-overlay
+									h6 Hangout
+								.service(name="sleepover")
+									.selection-overlay
+									h6 Sleepover
+								.service(name="taxiService")
+									.selection-overlay
+									h6 Taxi Service
+
+							p.subtext Hangouts include walks for dogs or a 
+								|checkup on your inside friends
+
+							.row
+								.col-md-6
+									h3 Frequency
+									.counter(field="frequency")
+										.guage
+											.fill
+										ul.count.clearfix
+											li.selected 0
+											li 1
+											li 2
+											li 3
+											li 4
+											li 5+
+
+								.col-md-6
+									h3 Time
+
+						.col-md-5
+							h3 Dogs
+							.counter(field="dogs")
+								.guage
+									.fill
+								ul.count.clearfix
+									li.selected 0
+									li 1
+									li 2
+									li 3
+									li 4
+									li 5+
+
+							h3 Cats
+							.counter(field="cats")
+								.guage
+									.fill
+								ul.count.clearfix
+									li.selected 0
+									li 1
+									li 2
+									li 3
+									li 4
+									li 5+
+
+							h3 Other
+
+					.result
+						small Your Estimate
+						p.charge
+							span.value 10
+							span.sub  (minumum)
+						button.show-info See an explanation of charges
+
+
+	section.container#testimonials
+
+		.row
+			h1 Testimonials
+			p.sub See what our friends have said about our services
+
+
+	section.container#news
+
+		.row
+			.col-md-10.no-float
+
+				.row
+					h1 News
+					p.sub The latest happenings at Let's Hangout!
+
+				.row
+					.col-md-4.story.insta
+						.card
+							.image-container
+								img(src="../images/photos/dogswalking.jpg")
+							p.summary Three dog day. My first time walking three dogs. 
+								|There was a lot of crossed lines and zany business
+								|alltogether. #letshangout #dogwalking #rva
+
+					.col-md-4.story.blog
+						.card
+							.image-container
+								img(src="../images/photos/dogswalking.jpg")
+							h4 Day At The River
+							i Sun. Sand. And River water.
+							p.summary This is a long form post example for a blog and what happens
+								|when you write thoughts here and how the translae
+								|in this small space that has a title and caption
+
+					.col-md-4.story.blog
+						.card
+							.image-container
+								img(src="../images/photos/swingdog.jpg")
+							h4	A Day at the Park
+							i Dogs love swings I guess.
+							p.summary This is a long form post example for a blog and what happens
+								|when you write thoughts here and how the translae
+								|in this small space that has a title and caption
+
+
+	section.container#contact
+
+		.row
+			.col-md-10.no-float
+
+				.row
+					h1 Contact
+					p.sub Start a conversation with Let's Hangout!
+
+				.row.card
+					.col-md-5.services(group-name="contact")
+						h4 What do you want to talk about?
+
+						.row
+							.service(name="hangout")
+								.selection-overlay
+								h6 Hangout
+							.service(name="sleepover")
+								.selection-overlay
+								h6 Sleepover
+							.service(name="taxiService")
+								.selection-overlay
+								h6 Taxi Service
+							.service(name="meetAndGreet")
+								.selection-overlay
+								h6 Meet & Greet
+							.service(name="scheduling")
+								.selection-overlay
+								h6 Scheduling
+							.service(name="generalInfo")
+								.selection-overlay
+								h6 General Info
+
+					.col-md-7.information
+						h4 Give us some general information
+
+						form
+							.fields
+								.slide-input
+									input(type="text")
+									label Name
+
+								.slide-input
+									input(type="text")
+									label Phone Number
+
+								.slide-input
+									input(type="text")
+									label Email
+
+								.slide-input
+									input(type="text")
+									label Neighborhood
+
+							button.btn.btn-primary Next
+
+	script(src="/scripts/bundle.js")

@@ -1,0 +1,142 @@
+
+@import "variables";
+
+#pricing {
+    
+    .calculator {
+
+        padding: 30px 40px;
+
+        h3 {
+        
+            text-align: left;
+            color: $heading-grey-light;
+            margin-bottom: .8em;
+        }
+
+        .counter {
+
+            .guage {
+
+                width: 100%;
+                height: .7em;
+                background-color: $tapfer;
+                border-radius: 1000px;
+                
+                .fill {
+                    
+                    min-width: 5%;
+                    width: 5%;
+                    height: 100%;
+                    border-radius: 1000px;
+                    background-color: $dark-money;
+
+                    -webkit-box-shadow: 0px 2px 8px 2px rgba(195,195,195,0.39);
+                    -moz-box-shadow: 0px 2px 8px 2px rgba(195,195,195,0.39);
+                    box-shadow: 0px 2px 8px 2px rgba(195,195,195,0.39);
+
+                    -webkit-transition: width 0.2s;
+                    transition: width 0.2s;
+                }
+            }
+
+            ul.count {
+
+                padding: 0;
+                margin: .4em auto;
+                width: 100%;
+
+                li {
+
+                    width: 5%;
+                    display: inline-block;
+                    float: left;
+                    list-style: none;
+                    margin-right: 14%;
+                    text-align: center;
+                    color: $heading-grey;
+                    cursor: pointer;
+
+                    -webkit-transition: color 0.2s;
+                    transition: color 0.2s;
+
+                    &.selected { color: $dark-money; }
+
+                    &:last-child {
+
+                        margin-right: 0;
+                    }
+
+                    &:hover {
+
+                        color: $money;
+                    }
+                }
+            }
+        }
+
+        .services {
+
+            padding-left: 15px;
+            margin-bottom: 1em;
+
+            .service {
+            
+                width: 20%;
+                padding-bottom: 20%;
+                margin: 0px 15% 0% 0px;
+
+                &:last-child {
+
+                    margin-right: 0px;
+                }
+            }
+        }
+    }
+
+    .result {
+
+        background-color: $best-friend-blue;
+        text-align: center;
+        padding: .3em 0;
+
+        small {
+            
+            display: block;
+            margin-bottom: .5em;
+        }
+
+        .charge {
+
+            color: #FFF;
+            font-size: 2em;
+            font-weight: 700;
+            background-color: $dark-money;
+            margin: 0 auto .3em;
+            width: 36%;
+            padding: .5em;
+            border-radius: 5px;
+
+            &:before {
+
+                content: "$";
+            }
+
+            .sub {
+
+                font-size: .5em;
+                font-weight: 100;
+            }
+        }
+
+        button {
+
+            text-decoration: underline;
+            background-color: transparent;
+            padding: 0;
+            color: $dark-money;
+            border: 0;
+            margin-bottom: .5em;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+
+#news {
+
+    .story {
+
+        text-align: center;
+        
+        .image-container {
+            
+            height: 0;
+            overflow: hidden;
+            padding-bottom: 100%;
+            position: relative;
+
+            &:after {
+                
+                display: block;
+                content: '';
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                height: 0;
+                width: 0;
+                border-bottom: 120px solid #FFF;
+                border-left: 295px solid transparent;
+            }
+
+            img {
+                
+                max-width: 100%;
+            }
+        }
+
+        .summary {
+
+            font-size: .9em;
+            line-height: 1.7em;
+            padding: 1.2em;
+        }
+
+        &.insta {
+            
+            .summary {
+
+            }
+        }
+    }
+}

@@ -1,0 +1,34 @@
+{
+  "name": "lets-hangout",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "async": "^1.5.0",
+    "dotenv": "^1.1.0",
+    "jquery": "^2.2.4",
+    "keystone": "^0.3.16",
+    "node-sass": "^3.3.2",
+    "node-sass-middleware": "^0.9.7",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "gulp": "^3.7.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-jshint": "^1.9.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^2.0.4",
+    "gulp-shell": "^0.5.0",
+    "gulp-uglify": "^1.5.3",
+    "gulp-watch": "^4.3.5",
+    "jshint": "^2.9.2",
+    "jshint-stylish": "^0.1.5"
+  },
+  "engines": {
+    "node": ">=0.10.22",
+    "npm": ">=1.3.14"
+  },
+  "scripts": {
+    "start": "node keystone.js"
+  },
+  "main": "keystone.js"
+}

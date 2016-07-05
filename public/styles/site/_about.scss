@@ -1,0 +1,38 @@
+
+#about {
+
+    .card {
+
+        padding: 0;
+    }
+
+    .introduction {
+
+        padding: 6.25em 5.5em;
+
+        .tell-em {
+
+            font-size: 1.6em;
+            font-weight: 700;
+        }
+    }
+
+    .photo {
+        
+        position: relative;
+        background-image: url("../images/shamsham.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: -140px;
+
+        .overlay {
+
+            background-color: rgba(83, 222, 208, 0.4);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
